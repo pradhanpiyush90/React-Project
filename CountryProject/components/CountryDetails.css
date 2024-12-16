@@ -1,0 +1,125 @@
+.back-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--element);
+    border-radius: 2px;
+    gap: 4px;
+    width: 70px;
+    margin: 22px 0 44px 20px;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 0 12px #00000026;
+}
+
+.country-card-container {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+}
+
+.flag-img-box {
+    max-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.country-name {
+    font-size: 1.4rem;
+}
+
+.country-details p {
+    font-size: 1.2rem;
+}
+
+.country-details span {
+    margin-left: 5px;
+}
+
+.country-details .lang {
+    max-width: 182px;
+}
+
+.country-details b {
+    font-weight: 600;
+}
+
+.country-details {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    column-gap: 69px;
+}
+
+.border {
+    margin-top: 35px;
+    font-size: 1rem;
+}
+
+.border-name {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    max-width: 212px;
+}
+
+.border a {
+    padding: 3px 12px;
+    box-shadow: 0px 0px 4px 1px rgb(211 211 211 / 49%);
+}
+
+.border b {
+    font-weight: 600;
+}
+
+/* dark and light mode */
+
+.dark .back-btn {
+    background-color: hsl(209, 23%, 22%);
+}
+
+/* media query */
+
+@media (max-width:1190px) {
+    .country-details {
+        height: 200px;
+    }
+}
+
+@media (max-width:1044px) {
+    .country-details {
+        height: unset;
+    }
+
+    .back-btn {
+        margin: 22px 0 48px 20px;
+    }
+}
+
+@media (max-width:626px) {
+    .country-card-container {
+        flex-direction: column;
+    }
+
+    .country-details {
+        height: unset;
+    }
+
+    .top-level {
+        margin-top: 19px;
+    }
+
+    .border {
+        flex-direction: column;
+    }
+}
